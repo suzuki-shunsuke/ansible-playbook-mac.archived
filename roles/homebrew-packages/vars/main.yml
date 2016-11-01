@@ -1,0 +1,12 @@
+---
+homebrew_packages:
+- curl
+- wget
+- tmux
+- the_silver_searcher
+- tree
+- zsh
+- git
+- git-lfs
+- vim
+- go

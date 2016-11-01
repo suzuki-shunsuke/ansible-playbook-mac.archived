@@ -1,0 +1,5 @@
+---
+go_packages:
+- github.com/github/hub
+- github.com/direnv/direnv
+- github.com/motemen/ghq

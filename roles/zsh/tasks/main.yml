@@ -1,0 +1,8 @@
+- name: Install zsh
+  homebrew:
+    name: zsh
+- name: Change the default shell to zsh
+  user:
+    name: "{{ansible_env.USER}}"
+    shell: "/usr/local/bin/zsh"
+  become: "{{nonroot}}"
