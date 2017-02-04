@@ -1,4 +1,5 @@
-- name: Install homebrew packages
+- name: Install Homebrew packages
   homebrew:
     name: "{{item}}"
+    update_homebrew: yes
   with_items: "{{homebrew_packages}}"

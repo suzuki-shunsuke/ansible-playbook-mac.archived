@@ -1,14 +1,11 @@
-# Ansible Playbook for Ubuntu CLI
+# Ansible Playbook for Mac
 
-[![Build Status](https://travis-ci.org/suzuki-shunsuke/ansible-playbook-ubuntu-cli.svg?branch=master)](https://travis-ci.org/suzuki-shunsuke/ansible-playbook-ubuntu-cli)
-
-* 日本語対応
 * wget
 * curl
 * nodebrew
 * silver searcher
 * tree
-* vim-gnome
+* vim
 * neobundle.vim
 * vim config
 * zsh
@@ -37,20 +34,28 @@
 * fzf
 * colorrc
 
+## Requirements
+
+* ansible
+* Homebrew
+
+```
+$ pip install ansible
+```
+
 ## Install Ansible roles dependencies
 
 ```
 $ ansible-galaxy install -r roles.yml
 ```
 
-## Create Vagrant Package
+## Run
 
 ```
-$ vagrant destroy
-$ vagrant up --provision-with=ansible
-$ vagrant package
+$ ansible-playbook --ask-become-pass setup.yml
 ```
 
 ## TODO
 
-* [apt-get autoremove](https://github.com/ansible/ansible-modules-core/issues/4029)
+* 日本語対応
+* Mac用のzsh, tmuxの設定

@@ -3,10 +3,18 @@ homebrew_packages:
 - curl
 - wget
 - tmux
-- the_silver_searcher
-- tree
 - zsh
-- git
-- git-lfs
 - vim
 - go
+- git
+- git-lfs
+- tree
+- the_silver_searcher
+# tmux vim paste Nothing to register
+- reattach-to-user-namespace
+# - zip
+# GNU Command
+- xz
+- binutils
+- coreutils
+- findutils
