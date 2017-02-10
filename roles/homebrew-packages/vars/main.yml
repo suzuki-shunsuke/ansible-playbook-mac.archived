@@ -10,6 +10,7 @@ homebrew_packages:
 - git-lfs
 - tree
 - the_silver_searcher
+- packer
 # tmux vim paste Nothing to register
 - reattach-to-user-namespace
 # - zip
@@ -18,3 +19,7 @@ homebrew_packages:
 - binutils
 - coreutils
 - findutils
+homebrew_cask_packages:
+- vagrant
+homebrew_tap_repositories:
+- caskroom/cask

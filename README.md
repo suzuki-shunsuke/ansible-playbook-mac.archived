@@ -33,6 +33,9 @@
 * ghq
 * fzf
 * colorrc
+* homebrew cask
+* vagrant
+* packer
 
 ## Requirements
 
