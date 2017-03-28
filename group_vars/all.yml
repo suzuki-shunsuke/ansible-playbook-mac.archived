@@ -1,3 +1,4 @@
 ---
 nonroot: "{{(ansible_env.HOME == '/root') | ternary('no', 'yes')}}"
+go_path: "{{ansible_env.get('GOPATH', '{}/.go'.format(ansible_env.HOME))}}"
 ghq_executable: "{{ansible_env.HOME}}/.go/bin/ghq"

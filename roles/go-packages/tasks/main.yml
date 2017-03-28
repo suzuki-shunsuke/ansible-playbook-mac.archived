@@ -3,5 +3,5 @@
   go:
     name: "{{item}}"
   environment:
-    GOPATH: "{{ansible_env.HOME}}/.go"
+    GOPATH: "{{go_path}}"
   with_items: "{{go_packages}}"
