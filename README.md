@@ -34,7 +34,6 @@
 * vagrant
 * packer
 * terraform
-* pbcopy
 
 The following items have been removed because I migrated from vim to neovim.
 
