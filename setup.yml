@@ -1,6 +1,5 @@
 ---
 - hosts: localhost
-  connection: local
   vars_files:
   - group_vars/all.yml
   roles:
@@ -8,8 +7,12 @@
   - suzuki-shunsuke.go-module
   - suzuki-shunsuke.ghq-module
   - go-packages
-  - role: suzuki-shunsuke.vim-conf
-    remote_repository_path: suzuki-shunsuke/vim.conf
+  #   - role: suzuki-shunsuke.vim-conf
+  #     remote_repository_path: suzuki-shunsuke/vim.conf
+  - role: suzuki-shunsuke.neovim-mac
+  - role: suzuki-shunsuke.neovim-conf
+    neovim_conf_repo: suzuki-shunsuke/neovim.conf
+    neovim_conf_undodir: "{{ansible_env.HOME}}/.local/share/nvim/undo"
   - role: suzuki-shunsuke.zsh-conf
     remote_repository_path: suzuki-shunsuke/zsh.conf
   - role: suzuki-shunsuke.zplug
@@ -20,10 +23,10 @@
   - suzuki-shunsuke.gvm
   # - suzuki-shunsuke.gvm-dep-mac
   - suzuki-shunsuke.nodebrew
-  - suzuki-shunsuke.neobundle-vim
+  # - suzuki-shunsuke.neobundle-vim
   - suzuki-shunsuke.tmux-tpm
-  - suzuki-shunsuke.docker-compose
-  # - suzuki-shunsuke.pyenv-install-dep-mac
+  # - suzuki-shunsuke.docker-compose
+  - suzuki-shunsuke.pyenv-install-dep-mac
   - suzuki-shunsuke.pyenv
   # - suzuki-shunsuke.rbenv-install-dep-mac
   - suzuki-shunsuke.rbenv

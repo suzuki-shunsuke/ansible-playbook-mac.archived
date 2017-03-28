@@ -5,9 +5,8 @@
 * nodebrew
 * silver searcher
 * tree
-* vim
-* neobundle.vim
-* vim config
+* neovim
+* neovim config
 * zsh
 * zip
 * zplug
@@ -15,8 +14,6 @@
 * tmux
 * tmux config
 * tpm
-* docker engine
-* docker compose
 * git
 * gitconfig
 * git lfs
@@ -36,6 +33,14 @@
 * homebrew cask
 * vagrant
 * packer
+* terraform
+* pbcopy
+
+The following items have been removed because I migrated from vim to neovim.
+
+* vim
+* neobundle.vim
+* vim config
 
 ## Requirements
 
@@ -55,10 +60,15 @@ $ ansible-galaxy install -r roles.yml
 ## Run
 
 ```
-$ ansible-playbook --ask-become-pass setup.yml
+$ ansible-playbook -i localhost --ask-become-pass setup.yml
 ```
 
 ## TODO
 
-* 日本語対応
-* Mac用のzsh, tmuxの設定
+* localize into japanese
+* tmux configuration for mac
+
+## Install Docker Engine and Docker Compose
+
+* https://docs.docker.com/docker-for-mac/install/
+* https://docs.docker.com/compose/install/

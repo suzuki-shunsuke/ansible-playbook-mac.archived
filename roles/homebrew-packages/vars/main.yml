@@ -4,13 +4,14 @@ homebrew_packages:
 - wget
 - tmux
 - zsh
-- vim
+# - vim
 - go
 - git
 - git-lfs
 - tree
 - the_silver_searcher
 - packer
+- terraform
 # tmux vim paste Nothing to register
 - reattach-to-user-namespace
 # - zip
