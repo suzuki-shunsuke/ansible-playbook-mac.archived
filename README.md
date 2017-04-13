@@ -32,6 +32,7 @@
 * colorrc
 * homebrew cask
 * vagrant
+* virtualbox
 * packer
 * terraform
 
