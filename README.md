@@ -35,6 +35,7 @@
 * virtualbox
 * packer
 * terraform
+* pwgen
 
 The following items have been removed because I migrated from vim to neovim.
 
