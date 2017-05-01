@@ -36,6 +36,7 @@
 * packer
 * terraform
 * pwgen
+* jq
 
 The following items have been removed because I migrated from vim to neovim.
 
