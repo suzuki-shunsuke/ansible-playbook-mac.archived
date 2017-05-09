@@ -13,6 +13,7 @@ homebrew_packages:
 - packer
 - terraform
 - pwgen
+- jsonlint
 # tmux vim paste Nothing to register
 - reattach-to-user-namespace
 # - zip
