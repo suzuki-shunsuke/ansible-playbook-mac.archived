@@ -10,13 +10,10 @@
 - src: suzuki-shunsuke.neovim-mac
 - src: suzuki-shunsuke.nodebrew
 - src: suzuki-shunsuke.pyenv
-- src: suzuki-shunsuke.pyenv-install-dep-mac
 - src: suzuki-shunsuke.rbenv
 - src: suzuki-shunsuke.tmux-conf
 - src: suzuki-shunsuke.tmux-tpm
 # - src: suzuki-shunsuke.vim-conf
 - src: suzuki-shunsuke.zplug
 - src: suzuki-shunsuke.zsh-conf
-# - src: suzuki-shunsuke.gvm-dep-mac
 # - src: suzuki-shunsuke.lang-ja-mac
-# - src: suzuki-shunsuke.rbenv-install-dep-mac

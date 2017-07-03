@@ -21,15 +21,14 @@
   - role: suzuki-shunsuke.gitconfig
     remote_repository_path: suzuki-shunsuke/git.conf
   - suzuki-shunsuke.gvm
-  # - suzuki-shunsuke.gvm-dep-mac
   - suzuki-shunsuke.nodebrew
   # - suzuki-shunsuke.neobundle-vim
   - suzuki-shunsuke.tmux-tpm
   # - suzuki-shunsuke.docker-compose
-  - suzuki-shunsuke.pyenv-install-dep-mac
-  - suzuki-shunsuke.pyenv
-  # - suzuki-shunsuke.rbenv-install-dep-mac
-  - suzuki-shunsuke.rbenv
+  - role: suzuki-shunsuke.pyenv
+    pyenv_is_dependencies_installed: yes
+  - role: suzuki-shunsuke.rbenv
+    rbenv_is_dependencies_installed: yes
   # - role: suzuki-shunsuke.colorrc
   #   remote_repository_path: suzuki-shunsuke/colorrc.conf
   # - suzuki-shunsuke.lang-ja-mac
