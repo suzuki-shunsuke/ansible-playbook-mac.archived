@@ -27,10 +27,8 @@
   # - suzuki-shunsuke.docker-compose
   - role: suzuki-shunsuke.pyenv
     pyenv_is_dependencies_installed: yes
+  - role: suzuki-shunsuke.pyenv-virtualenv
   - role: suzuki-shunsuke.rbenv
     rbenv_is_dependencies_installed: yes
-  # - role: suzuki-shunsuke.colorrc
-  #   remote_repository_path: suzuki-shunsuke/colorrc.conf
-  # - suzuki-shunsuke.lang-ja-mac
   - zsh
   - suzuki-shunsuke.fzf

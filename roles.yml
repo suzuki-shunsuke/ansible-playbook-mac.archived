@@ -9,6 +9,7 @@
 - src: suzuki-shunsuke.neovim-mac
 - src: suzuki-shunsuke.nodebrew
 - src: suzuki-shunsuke.pyenv
+- src: suzuki-shunsuke.pyenv-virtualenv
 - src: suzuki-shunsuke.rbenv
 - src: suzuki-shunsuke.tmux-conf
 - src: suzuki-shunsuke.tmux-tpm
