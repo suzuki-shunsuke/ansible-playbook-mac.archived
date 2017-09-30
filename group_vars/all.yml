@@ -1,3 +1,7 @@
 playbook_nonroot: "{{(ansible_env.HOME == '/root') | ternary('no', 'yes')}}"
-go_path: "{{ansible_env.get('GOPATH', '{}/.go'.format(ansible_env.HOME))}}"
-pyenv_root: "{{ansible_env.HOME}}/.pyenv"
+# pyenv
+pyenv_is_dependencies_installed: yes
+# rbenv
+rbenv_is_dependencies_installed: yes
+# gvm
+gvm_is_dependencies_installed: yes
