@@ -1,7 +1,0 @@
----
-- name: Install go packages
-  go:
-    name: "{{item}}"
-  environment:
-    GOPATH: "{{go_path}}"
-  with_items: "{{go_packages}}"
