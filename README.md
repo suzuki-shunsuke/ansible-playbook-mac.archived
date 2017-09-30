@@ -1,50 +1,5 @@
 # Ansible Playbook for Mac
 
-* wget
-* curl
-* nodebrew
-* silver searcher
-* tree
-* neovim
-* neovim config
-* zsh
-* zip
-* zplug
-* zsh config
-* tmux
-* tmux config
-* tpm
-* git
-* gitconfig
-* git lfs
-* pyenv
-* pyenv install dependencies
-* rbenv
-* rbenv/ruby-build
-* rbenv install dependencies
-* go
-* gvm
-* gvm install dependencies
-* hub
-* direnv
-* ghq
-* fzf
-* colorrc
-* homebrew cask
-* vagrant
-* virtualbox
-* packer
-* terraform
-* pwgen
-* jq
-* jsonlint
-
-The following items have been removed because I migrated from vim to neovim.
-
-* vim
-* neobundle.vim
-* vim config
-
 ## Requirements
 
 * ansible
@@ -66,9 +21,12 @@ $ ansible-galaxy install -r roles.yml
 $ ansible-playbook -i localhost --ask-become-pass setup.yml
 ```
 
+## See Also
+
+* https://github.com/suzuki-shunsuke/mac-boot
+
 ## TODO
 
-* localize into japanese
 * tmux configuration for mac
 
 ## Install Docker Engine and Docker Compose

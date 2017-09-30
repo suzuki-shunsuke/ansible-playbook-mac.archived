@@ -1,37 +1,24 @@
 ---
 - hosts: localhost
   vars_files:
-  - group_vars/all.yml
+    - group_vars/all.yml
+    - group_vars/homebrew.yml
+    - group_vars/tmux.yml
+    # - group_vars/vim.yml
+    - group_vars/git.yml
+    - group_vars/zsh.yml
+    - group_vars/neovim.yml
   roles:
-  - homebrew-packages
-  - suzuki-shunsuke.go-module
-  - suzuki-shunsuke.ghq-module
-  - go-packages
-  #   - role: suzuki-shunsuke.vim-conf
-  #     remote_repository_path: suzuki-shunsuke/vim.conf
-  - role: suzuki-shunsuke.neovim-mac
-  - role: suzuki-shunsuke.neovim-conf
-    neovim_conf_repo: suzuki-shunsuke/neovim.conf
-    neovim_conf_undodir: "{{ansible_env.HOME}}/.local/share/nvim/undo"
-  - role: suzuki-shunsuke.zsh-conf
-    remote_repository_path: suzuki-shunsuke/zsh.conf
-  - role: suzuki-shunsuke.zplug
-  - role: suzuki-shunsuke.tmux-conf
-    remote_repository_path: suzuki-shunsuke/tmux.conf
-  - role: suzuki-shunsuke.gitconfig
-    remote_repository_path: suzuki-shunsuke/git.conf
-  - suzuki-shunsuke.gvm
-  # - suzuki-shunsuke.gvm-dep-mac
-  - suzuki-shunsuke.nodebrew
-  # - suzuki-shunsuke.neobundle-vim
-  - suzuki-shunsuke.tmux-tpm
-  # - suzuki-shunsuke.docker-compose
-  - suzuki-shunsuke.pyenv-install-dep-mac
-  - suzuki-shunsuke.pyenv
-  # - suzuki-shunsuke.rbenv-install-dep-mac
-  - suzuki-shunsuke.rbenv
-  # - role: suzuki-shunsuke.colorrc
-  #   remote_repository_path: suzuki-shunsuke/colorrc.conf
-  # - suzuki-shunsuke.lang-ja-mac
-  - zsh
-  - suzuki-shunsuke.fzf
+    - homebrew-packages
+    # - suzuki-shunsuke.vim-conf
+    # - suzuki-shunsuke.neobundle-vim
+    - suzuki-shunsuke.neovim-mac
+    - suzuki-shunsuke.neovim-conf
+    - suzuki-shunsuke.zsh-conf
+    - suzuki-shunsuke.tmux-conf
+    - suzuki-shunsuke.tmux-tpm
+    - suzuki-shunsuke.gitconfig
+    - suzuki-shunsuke.gvm
+    - suzuki-shunsuke.pyenv
+    - suzuki-shunsuke.rbenv
+    - zsh
