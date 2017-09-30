@@ -1,5 +1,7 @@
 # Ansible Playbook for Mac
 
+[![Build Status](https://travis-ci.org/suzuki-shunsuke/ansible-playbook-mac.svg?branch=master)](https://travis-ci.org/suzuki-shunsuke/ansible-playbook-mac)
+
 ## Requirements
 
 * ansible
